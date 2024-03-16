@@ -1,0 +1,166 @@
+.back{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    font-weight: bolder;
+    top: -40px;
+}
+
+.back .p_back{
+    margin-left: 15px;
+    font-size: 28px;
+}
+
+.cont{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cont .pic {
+    width: 500px; 
+    height: 530px;
+    border: 1px solid #ccc; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cont .pic img {
+    height: 100%;
+    width: auto; 
+    object-fit: cover;
+}
+
+.cont .info{
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.cont .info .status{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    display: inline-block; 
+    margin: 0 auto;
+}
+
+.cont .info .title{
+    padding:15px 0 15px 0;
+    padding-top: 5px;
+    font-size: 32px;
+}
+
+.cont .info .price{
+    color: red;
+    font-weight: 900;
+    font-size: 25px;
+    padding-bottom: 15px;  
+}
+
+.cont .info .desc{
+    padding-bottom: 15px;
+}
+
+.cont .info .description{
+    font-size: 15px;
+}
+
+.cont .info .description h3{
+    background-color: lightgrey;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.quantity-selector {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 2px black;
+    border-radius: 40px;
+    position: relative;
+    padding-top: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.quan{
+    font-weight: bold;
+}
+
+.quantity-selector button{
+    padding-bottom: 10px;
+    border: none;
+    background-color: transparent;
+}
+.quantity-selector div{
+    padding-bottom: 10px;
+}
+
+.total{
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.cont .info .order button{
+    margin:10px 0 10px 0;
+    background-color: transparent;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cont .info .order .flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    width: 100%; 
+    margin-top: 10px;
+}
+
+.cont .info .order .flex button {
+    width: 280px; 
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.cont .info .order .flex .cart_btn{
+    background: white;
+    border: 2px solid  black;
+    color: black;
+}
+
+.cont .info .order .flex .cart_btn:hover{
+    background: black;
+    color: rgb(255, 36, 36);
+}
+
+.cont .info .order .flex .wishlist_btn{
+    background: rgb(255, 36, 36);
+    color: white;
+    border: 2px solid rgb(255, 36, 36);
+    margin-right: 0px;
+}
+
+.cont .info .order .flex .wishlist_btn:hover{
+    color: black;
+    border: solid 2px black;
+}
+
+.cont .info .order .buy_btn{
+    border: solid 2px black;
+    background: black;
+    color: white;
+}
+
+.cont .info .order .buy_btn:hover{
+    color: rgb(255, 36, 36);
+    border: solid 2px rgb(255, 36, 36);
+}

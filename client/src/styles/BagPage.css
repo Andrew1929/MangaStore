@@ -1,0 +1,153 @@
+.bag {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bag  .bagContent{
+    padding-left: 60px;
+    padding-bottom: 30px;
+}
+
+.bag  .bagContent .head p{
+    width: 830px;
+    padding: 30px 0 5px 0;
+    font-size: 28px;
+    font-weight: bold;
+ 
+}
+
+.bag  .bagContent .manga{
+    padding-top: 10px;
+    border-top: 1px solid gray;
+}
+
+.bag  .bagContent .manga .cont img{
+    height: 200px; 
+    width: 200px; 
+    object-fit: contain; 
+    object-position: center;
+}
+
+.bag .bagContent .manga .cont {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.bag .bagContent .manga .cont .details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.bag .bagContent .manga .cont .name_price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bag .bagContent .manga .cont .name_price .title {
+    color: #000; 
+    text-decoration: none;
+}
+
+.bag .bagContent .manga .cont .qty_buttons {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.bagQty {
+    position: relative;
+    left: -100px;
+    width: 100px; 
+    height: 40px; 
+    padding: 5px; 
+    align-items: center; 
+    margin-top: 0;
+    margin-left: 20px;
+}
+
+.bagQty  button {
+    padding: 0 5px;
+    font-size: 15px; 
+}
+
+.bagQty .quantity-display {
+    padding: 0;
+    font-size: 14px;
+}
+
+.bagQty .quan {
+    margin-bottom: 5px;
+    font-size: 14px; 
+}
+
+.bag .bagContent .manga .cont .qty_buttons p{
+    font-weight: bold;
+}
+
+.bag .bagContent .manga .cont .qty_buttons .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.bag .bagContent .manga .cont .qty_buttons .buttons button:hover {
+    color: rgb(255, 36, 36);
+}
+
+.bag .calculation .compHead p{
+    position: relative;
+    right: 60px;
+    width: 450px;
+    padding: 30px 0 5px 0;
+    font-size: 28px;
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+}   
+
+.bag .calculation .priceCalc{
+    padding-top: 15px;
+    position: relative;
+    left:-60px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid gray;
+}
+
+.bag .calculation .priceCalc .orderTotal,
+.bag .calculation .priceCalc .discount,
+.bag .calculation .priceCalc .delivery{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.bag .calculation .priceCalc p{
+    font-size: 20px;
+}
+
+.bag .calculation .total{
+    position: relative;
+    left:-60px;
+}
+
+.bag .calculation .total p{
+    font-size: 20px;
+}
+
+.bag .calculation .total .totalAmount{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bag .calculation .buyBtn{
+    padding-top: 15px;
+    position: relative;
+    left:-60px;
+}
+
+.bag .calculation .buyBtn button:hover{
+    color: rgb(255, 36, 36);
+}

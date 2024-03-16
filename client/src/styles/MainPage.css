@@ -1,0 +1,500 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: black;
+    color:#fff ;
+    padding: 1.25rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    gap: 3rem;
+}
+.logo, .icons {
+    padding: 0 .625rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.logo a{
+    margin-left: 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo a:hover{
+    color: red;
+}
+
+.logo .logo-p{
+    height: 3.125rem;
+    width:  3.125rem;
+    cursor: pointer;
+}
+nav{
+    color: #fff;
+    align-items: center;
+    display: flex;
+}
+nav ul{
+    display: flex;
+   justify-content: center;
+   align-items: center; 
+   height: auto;
+}
+nav ul li{
+    margin-left: 1.5rem;
+    list-style: none;
+    height: auto;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    transition: 0.4s ease;
+}
+nav ul li a:hover{
+    color: red;
+}
+
+.icons{
+    width: auto;
+}
+
+.icons > * {
+    margin-right: 1.25rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: #fff;
+}
+.icons > *:hover{
+    color: rgb(255, 36, 36);
+}
+.icons > *:last-child {
+    margin-right: 0;
+}
+
+.icon-count{
+    font-weight: bold;
+    font-size: .75rem;
+    position: absolute; 
+    top: -.75rem;            
+    right: -.75rem;         
+    background-color: black;
+    color: red;         
+    border-radius: 50%; 
+    border: 2px solid red;   
+    width: 1.25rem;          
+    height: 1.25rem;           
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons > a {
+    position: relative; 
+}
+
+.mainPic{
+    background: url('./images/manga-background.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:100% ;
+    min-height: 87vh;
+}
+.section{
+    padding: 5rem 9%;
+    font-size: 1.125rem;
+}
+.heading span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding: 0.5rem 2rem;
+    color:var(--black) ; 
+    background: #fff;
+    border: var(--border);
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1.25rem; 
+    margin-top: 2rem;
+}
+
+.manga-card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.25rem;
+    background: #eee;
+    padding: 1.5rem;
+    border-radius: .675rem;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.1);
+    width: 16rem;
+    height: 29rem;
+}
+
+.manga-card .content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.manga-card .picture img {
+    width: 13rem;
+    height: 17rem;
+    border-radius: .675rem;
+    cursor: pointer;
+}
+
+.manga-card .content  h3,
+.manga-card .content .price{
+    padding:.675rem 0 .15rem 0;
+    font-weight: bolder;
+}
+
+.manga-card .content .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: auto;
+    border-radius: .5rem;
+    color: #fff;
+    background: black;
+    font-size: 1.7rem;
+    height: 3.75rem;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.manga-card .content  h3{
+    height: 3rem;
+}
+
+.manga-card .content .btn:hover{
+    color: red;
+}
+
+footer .join{
+    height: 13.125rem;
+    padding: 2.5rem;
+    background: rgba(205,0,75,255);
+    text-align: center;
+}
+
+footer .join .sign{
+    color: white;
+    font-size: 1.5rem;
+    padding-bottom: .5rem;
+    font-weight: bold;
+}
+
+footer .join p{
+    color: white;
+    padding-bottom: 1.25rem;
+}
+
+footer .join .input-button-container {
+    justify-content: center;
+    position: relative;
+    
+}
+
+footer .join .input-button-container input {
+    border: .125rem solid white;
+    width: 25rem;
+    height: 3.125rem;
+    font-size: 1.25rem;
+    padding-left: .675rem;
+    background: rgba(205, 0, 75, 255);
+    color: white;
+    padding-right: 7.5rem; 
+}
+
+footer .join .email::placeholder {
+    color: white;
+}
+
+footer .join .email:focus {
+    outline: none;  
+    border: 2px solid white; 
+}
+
+footer .join .input-button-container button {
+    align-items: center;
+    margin-left: -8rem;
+    width: 7.5rem;
+    height: 2.3rem;
+    border-radius: 0%;
+    border: .125rem solid black;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+footer .join .input-button-container button:hover{
+    border: .125rem  solid white;
+}
+
+footer .footer{
+    padding: 2.5rem 10% 2.5rem 10%;
+    background: rgba(26,24,30,255);
+    color: rgb(229, 229, 229);
+}
+
+footer .footer .higher{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer .higher div{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer .higher div  h5{
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+footer .footer .higher .customerService .service{
+    padding-bottom: 1.25rem;
+}
+
+footer .footer .higher .customerService .service p{
+    font-size: 1rem;
+    padding-bottom: .675rem;
+    cursor: pointer;
+    width: 22rem;
+}
+
+footer .footer .higher .customerService .service p:hover{
+    color: white;
+}
+
+footer .footer .higher .mission p{
+    font-size: 1rem;
+    width: 18rem;
+}
+
+footer .footer .higher .storeLogo img{
+    height: 5rem;
+    width: 5rem;
+    border: .125rem solid white;
+}
+
+footer .lower{
+    border-top: 1px solid grey;
+}
+
+footer .lower .underLine{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .lower .underLine .location p{
+    padding-bottom: .3rem;
+}
+
+footer .lower .underLine .socialMedia{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+footer .lower .underLine .socialMedia .sm{
+    color: rgb(229, 229, 229);
+    margin-left: .675rem;
+}   
+
+footer .lower .underLine .socialMedia:hover{
+    color: white;
+}
+
+.button {
+    border-radius: .675rem;
+    border: 1px solid black;
+    width: 12.5rem;
+    height: 3.125rem;
+    background: rgba(26, 24, 30, 255);
+    color: white;
+    transition: border-color 0.3s; 
+}
+
+.button:hover {
+    border-color: white; 
+}
+
+.homeBtn{
+    border-radius: .675rem; 
+    width: 12.5rem; 
+    height: 3.125rem; 
+    background: rgba(26,24,30,255) ; 
+    color: white; 
+    border: 1px solid black;
+    transition: border-color 0.3s; 
+}
+
+.homeBtn:hover{
+    border-color: white;
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; transform: scale(0.5); }
+    10%, 90% { opacity: 1; transform: scale(1); }
+}
+
+.notificationContainer{
+    background: white;
+    border: 2px solid black;
+    color: black;
+    z-index: 100;
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 18.75rem;
+    height: 9.375rem;
+    padding: 1.25rem;
+    opacity: 0; 
+    transform: scale(0.5); 
+    animation: fadeInOut 5s ease-in-out;
+}
+
+.notificationContainer p,
+.notificationContainer div{
+    display: flex;
+    justify-content: center;
+}
+
+.closeBtn {
+    position: absolute;
+    top: .2rem;
+    right: .3rem;
+    color: red;
+    cursor: pointer;
+}
+
+.notificationContainer p:hover{
+    color: black;
+}
+
+.notificationContainer div .toCart{
+    width: 12.5rem;
+    height: 2.2rem;
+    color: white;
+    background: black;
+}
+
+.notificationContainer div .toCart:hover{
+    border: 2px solid red;
+}
+
+@media (max-width: 1200px) {
+
+    .logo a{
+        font-size: 1.5rem;
+    }
+
+    nav ul li a{
+        font-size: 1rem;
+    }
+
+    .icons > *{
+        font-size: 1rem;
+    }
+
+    .section{
+        padding:3rem 3% 5rem 3%;
+    }
+
+    .container {
+        gap: 1.5rem; 
+    }
+
+    .manga-card{
+        padding: 1.25rem;
+        width: 13rem;
+        height: 26rem;
+    }
+
+    .manga-card .content .btn {
+        font-size: 1.5rem;
+    }
+
+    .manga-card .content  h3,
+    .manga-card .content .price{
+        font-size: 1.1rem;
+    }
+
+    .manga-card .picture img {
+        width: 10.5rem;
+        height: 14rem;
+    }
+
+    footer .footer .higher div  h5{
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    footer .footer .higher .customerService .service p{
+        font-size: .9rem;
+        width: 20rem;
+    }
+
+    footer .footer .higher .mission p{
+        font-size: .9rem;
+        width: 18rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .section{
+        padding:2rem 0 5rem 0;
+    }
+
+    .heading span{
+        font-size: 2.5rem;
+    }
+
+    .container {
+        margin-top: 1rem;
+        grid-template-columns: repeat(3, 14rem); 
+        gap: 2rem 5%;
+        padding: 0 8%;
+    }
+
+    .manga-card{
+        padding: 1.25rem;
+        width: 14rem;
+        height: 27rem;
+    }
+
+    .manga-card .picture img {
+        width: 11rem;
+        height: 15rem;
+    }
+
+    .manga-card .content .btn {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 375px) {
+
+}

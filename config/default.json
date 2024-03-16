@@ -1,0 +1,6 @@
+{
+    "port" : 5000,
+    "mongoUri": "mongodb+srv://andrew:qwerty123@cluster0.5sjkjbp.mongodb.net/",
+    "jwtKey":"anime is top",
+    "initializeDatabase": false
+}
