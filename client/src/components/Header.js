@@ -94,7 +94,7 @@ export const Header = () => {
               {wishlistCount > 0 && <span className="icon-count">{wishlistCount}</span>}
           </Link>
           <FontAwesomeIcon icon={faMagnifyingGlass} />
-          <Link  onClick={logoutHandler} to= '/profile' ><FontAwesomeIcon icon={faUser}/></Link>
+          <Link to= '/profile' ><FontAwesomeIcon icon={faUser}/></Link>
           <Link to= '/bag' >
           <FontAwesomeIcon icon={faCartShopping} />
             {cartCount > 0 && <span className="icon-count">{cartCount}</span>}
